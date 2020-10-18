@@ -7,7 +7,6 @@ public class ReadCard : MonoBehaviour
 {
     bool up = false;
     public int card_id = 0;
-    public TMPro.TextMeshProUGUI info;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +27,6 @@ public class ReadCard : MonoBehaviour
             up = true;
         }
         Debug.Log(card_id);
-        info.text = card_id.ToString();
     }
 
     void OnMouseExit()
