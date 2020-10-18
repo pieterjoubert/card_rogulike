@@ -6,15 +6,14 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class NewTestScript
+    public class HandTests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void NewTestScriptSimplePasses()
+        public void HandSize()
         {
-            HandArray h = new HandArray();
-            Assert.AreEqual(h.TestGet(), 1);
-            // Use the Assert class to test conditions
+            HandArray h = new HandArray(7, 10);
+            Assert.AreEqual(h.GetCard(7), null);
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
