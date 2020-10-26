@@ -10,10 +10,8 @@ public class DamageAction : Action
     public override bool Do()
     {
         Enemy e = Target.GetComponent<EnemyController>().enemyInfo;
-        //Target.CharacterController.TakeDamage(damageValue);
-        Debug.Log("Deals " + DamageValue + " to " + Target.name);
         e.TakeDamage(DamageValue);
-        Debug.Log(Target.name + " now has " + e.HP);
+
         return true;
     }
 
